@@ -6,23 +6,19 @@ var generateBtn = document.querySelector("#generate");
   var chosenCharacters = []
 function generatePassword(){
 
-var string = "Generate Password";
-let passwordLength = 8;
-  if(string.length > 8 && string.length < 128) {
-    for (var i = string.length -1; i >=0; i--) {
-      
-    }
-  }
-return userPassword
-  
+function = "Generate Password";
+let passwordLength = '';
+for (var i = 0; i < num; i++) {
+  password += getPasswordCharacter();
 }
-
-
+return password;
+  }
+  
   function writePassword(){
-  var password = generatePassword();
+  var password = Password();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-  }
-generateBtn.addEventListener("click", writePassword);
   
+generateBtn.addEventListener("click", writePassword);
+  }
